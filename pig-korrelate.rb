@@ -7,7 +7,8 @@ class PigKorrelate < Formula
   patch :DATA
 
   def install
-    system "ant clean jar jar-withouthadoop -Dhadoopversion=23 -Dhbaseversion=95"
+    system "ant clean clean-zebra zebra jar jar-withouthadoop -Dhadoopversion=23 -Dhbaseversion=95"
+    lib.install 'build/contrib/zebra/zebra-0.8.0-dev.jar'
     bin.install 'bin/pig'
     prefix.install ["pig.jar", "pig-withouthadoop.jar"]
   end

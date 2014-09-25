@@ -2,7 +2,7 @@ require 'formula'
 
 class SqoopPostgres < Formula
   homepage 'http://sqoop.apache.org/'
-  url 'http://apache.mirror.iphh.net/sqoop/1.4.4/sqoop-1.4.4.bin__hadoop-0.23.tar.gz'
+  url 'http://korrelate-public-repo.s3.amazonaws.com/hadoop/sqoop/sqoop-1.4.4.bin__hadoop-2.0.4-alpha.tar.gz'
   version '1.4.4'
 
   depends_on 'hadoop'

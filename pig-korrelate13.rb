@@ -9,7 +9,7 @@ class PigKorrelate13 < Formula
   def install
     system "ant clean jar jar-withouthadoop -Dhadoopversion=23 -Dhbaseversion=95"
     bin.install 'bin/pig'
-    prefix.install ["pig.jar", "pig-withouthadoop.jar"]
+    prefix.install ["pig-h2.jar", "pig-withouthadoop-h2.jar"]
   end
 
   def caveats; <<-EOS.undent

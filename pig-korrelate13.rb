@@ -10,6 +10,7 @@ class PigKorrelate13 < Formula
     system "ant clean jar jar-withouthadoop -Dhadoopversion=23 -Dhbaseversion=95"
     system "curl -o lib/zebra-0.8.0.jar http://korrelate.s3.amazonaws.com/hadoop/lib/zebra-0.8.0.jar"
     bin.install 'bin/pig'
+    lib.install 'lib/zebra-0.8.0-dev.jar'
     prefix.install ["pig-h2.jar", "pig-withouthadoop-h2.jar"]
   end
 

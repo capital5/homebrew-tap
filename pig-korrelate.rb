@@ -2,7 +2,7 @@ require 'formula'
 
 class PigKorrelate < Formula
   homepage 'https://github.com/korrelate/pig'
-  head 'https://github.com/korrelate/pig.git', :using => :git, :branch => "branch-0.12.1"
+  head 'https://github.com/korrelate/pig.git', :using => :git, :branch => "branch-0.12.2"
 
   patch :DATA
 

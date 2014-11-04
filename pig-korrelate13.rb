@@ -8,9 +8,8 @@ class PigKorrelate13 < Formula
 
   def install
     system "ant clean jar jar-withouthadoop -Dhadoopversion=23 -Dhbaseversion=95"
-    system "curl -o lib/zebra-0.8.0.jar http://korrelate.s3.amazonaws.com/hadoop/lib/zebra-0.8.0.jar"
     bin.install 'bin/pig'
-    lib.install 'lib/zebra-0.8.0-dev.jar'
+    resource("zebra").stage { lib.install "zebra-0.8.0.jar" }
     prefix.install ["pig-h2.jar", "pig-withouthadoop-h2.jar"]
   end
 
@@ -19,6 +18,11 @@ class PigKorrelate13 < Formula
       export JAVA_HOME="$(/usr/libexec/java_home)"
     EOS
   end
+
+  resource "zebra" do
+    url "http://korrelate.s3.amazonaws.com/hadoop/lib/zebra-0.8.0.jar"
+  end
+
 end
 
 # There's something weird with Pig's launch script, it doesn't find the correct

@@ -1,6 +1,6 @@
 require 'formula'
 
-class PigKorrelate13 < Formula
+class PigKorrelate14 < Formula
   homepage 'https://github.com/korrelate/pig'
   head 'https://github.com/korrelate/pig.git', :using => :git, :branch => "branch-0.14.1"
 

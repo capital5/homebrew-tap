@@ -7,8 +7,6 @@ class SqoopPostgres < Formula
 
   depends_on 'hadoop-2.5.2'
   depends_on 'hbase-0.98.8'
-  depends_on 'hive'
-  depends_on 'zookeeper'
 
   resource "postgresql_jar" do
     url "http://jdbc.postgresql.org/download/postgresql-9.2-1003.jdbc4.jar"

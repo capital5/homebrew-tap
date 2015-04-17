@@ -11,7 +11,7 @@ class PigKorrelate143 < Formula
     bin.install 'bin/pig'
     lib.install Dir["lib/*"]
     resource("zebra").stage { lib.install "zebra-0.8.0.jar" }
-    prefix.install ["pig-0.14.0-SNAPSHOT-core-h2.jar"]
+    prefix.install ["pig-0.14.3-SNAPSHOT-core-h2.jar"]
   end
 
   def caveats; <<-EOS.undent

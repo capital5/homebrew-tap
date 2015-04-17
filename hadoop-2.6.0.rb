@@ -2,8 +2,9 @@ require "formula"
 
 class Hadoop260 < Formula
   homepage "http://hadoop.apache.org/"
-  url 'http://s3.amazonaws.com/korrelate-public-repo/hadoop/hadoop/hadoop-2.6.0.tar.gz'
-  sha1 "5b5fb72445d2e964acaa62c60307168c009d57c5"
+  # we downgraded the jets3t JAR to 0.7.4 so that s3 access actually works.
+  url 'http://s3.amazonaws.com/korrelate-public-repo/hadoop/hadoop/hadoop-2.6.0-downgrade-to-jets3t-0.7.4.tar.gz'
+  sha1 "a6446ceea8ddb49936c7193cf5e38a133e8a5855"
 
   def install
     rm_f Dir["bin/*.cmd", "sbin/*.cmd", "libexec/*.cmd", "etc/hadoop/*.cmd"]

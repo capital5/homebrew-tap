@@ -9,7 +9,7 @@ class Hbase09813Hadoop260 < Formula
 
   def install
     rm_f Dir["bin/*.cmd", "conf/*.cmd"]
-    libexec.install %w[bin conf docs lib hbase-webapps]
+    libexec.install %w[bin conf lib hbase-webapps]
     bin.write_exec_script Dir["#{libexec}/bin/*"]
 
     inreplace "#{libexec}/conf/hbase-env.sh",

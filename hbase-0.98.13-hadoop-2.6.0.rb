@@ -5,7 +5,7 @@ class Hbase09813Hadoop260 < Formula
   url 'http://s3.amazonaws.com/korrelate-public-repo/hadoop/hbase/hbase-0.98.13-hadoop-2.6.0-SNAPSHOT-bin.tar.gz'
   sha1 'a0139f9d4026fd20171d7baba5ab03d023eb8338'
 
-  depends_on 'hadoop-2.6.0'
+  depends_on 'hadoop-2.5.2'
 
   def install
     rm_f Dir["bin/*.cmd", "conf/*.cmd"]

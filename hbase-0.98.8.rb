@@ -5,7 +5,7 @@ class Hbase0988 < Formula
   url 'http://archive.apache.org/dist/hbase/hbase-0.98.8/hbase-0.98.8-hadoop2-bin.tar.gz'
   sha1 'a1b5d19a52976f2f42f21dd36bd040d081f3d491'
 
-  depends_on 'hadoop-2.6.0'
+  depends_on 'hadoop-2.5.2'
 
   def install
     rm_f Dir["bin/*.cmd", "conf/*.cmd"]

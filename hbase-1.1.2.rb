@@ -11,6 +11,7 @@ class Hbase112 < Formula
     rm_f Dir["bin/*.cmd", "conf/*.cmd"]
     libexec.install %w[bin conf lib hbase-webapps]
     bin.write_exec_script Dir["#{libexec}/bin/*"]
+    resource("phoenix_client").stage  { (libexec/"lib").install "phoenix-4.4.0-HBase-1.1-client.jar" }
 
     inreplace "#{libexec}/conf/hbase-env.sh",
       "# export JAVA_HOME=/usr/java/jdk1.6.0/",
@@ -28,4 +29,9 @@ class Hbase112 < Formula
       http://wiki.apache.org/hadoop/Hbase
     EOS
   end
+
+  resource "phoenix_client" do
+    url "http://korrelate-public-repo.s3.amazonaws.com/hadoop/phoenix/phoenix-4.4.0-HBase-1.1-client.jar"
+  end
+
 end

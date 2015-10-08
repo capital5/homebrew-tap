@@ -1,12 +1,9 @@
 require 'formula'
 
-class SqoopPostgres < Formula
+class SqoopPostgresNoDependencies < Formula
   homepage 'http://sqoop.apache.org/'
   url 'http://korrelate-public-repo.s3.amazonaws.com/hadoop/sqoop/sqoop-1.4.4.bin__hadoop-2.0.4-alpha.tar.gz'
   version '1.4.4'
-
-  depends_on 'hadoop-2.5.2'
-  depends_on 'hbase-0.98.8'
 
   resource "postgresql_jar" do
     url "http://jdbc.postgresql.org/download/postgresql-9.2-1003.jdbc4.jar"

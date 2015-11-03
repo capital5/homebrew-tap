@@ -5,7 +5,7 @@ class Hbase112 < Formula
   url 'http://s3.amazonaws.com/korrelate-public-repo/hadoop/hbase/hbase-1.1.2.tar.gz'
   sha1 'dc62a7bb102cb5c7096e74fe882699a2dddea8a4'
 
-  depends_on 'hadoop-2.7.1'
+  depends_on 'hadoop-2.5.2'
 
   def install
     rm_f Dir["bin/*.cmd", "conf/*.cmd"]

@@ -15,7 +15,7 @@ class PigKorrelate16 < Formula
     # go to /Library/Caches/Homebrew/pig-korrelate16--git and run the system command 
     # (ant clean...) listed above in that directory. Once complete, you can see
     # the name of the JAR and you will put the name of that JAR here:
-    prefix.install ["pig-0.16-KORRELATE-core-h2.jar"]
+    prefix.install ["pig-0.16.0-KORRELATE-core-h2.jar"]
   end
 
   def caveats; <<-EOS.undent

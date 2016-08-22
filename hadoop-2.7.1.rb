@@ -3,7 +3,7 @@ require "formula"
 class Hadoop271 < Formula
   homepage "http://hadoop.apache.org/"
   url 'http://s3.amazonaws.com/korrelate-public-repo/hadoop/hadoop/hadoop-2.7.1.tar.gz'
-  sha1 'bb0f3781a90e279f8d1963674e7a26a84b9bd8a3'
+  sha256 'df4cd44c4a788fe21aaa3e64d7b73c4ace590a00a767de6b9a5bcc743dfb85a5'
 
   # this patch is needed for hadoop 2.6.0 and following to work with s3 URLs. It adds
   # the tools directory to the classpath which used to be a part of the classpath by default.

@@ -4,7 +4,7 @@ class Hadoop260WithJets3t074 < Formula
   homepage "http://hadoop.apache.org/"
   # we downgraded the jets3t JAR to 0.7.4 so that s3 access actually works.
   url 'http://s3.amazonaws.com/korrelate-public-repo/hadoop/hadoop/hadoop-2.6.0-downgrade-to-jets3t-0.7.4.tar.gz'
-  sha1 "a6446ceea8ddb49936c7193cf5e38a133e8a5855"
+  sha256 'b9608d2f490ed45c5d776b6d75dd1cff79bf21461fbe52fce273ead349c8a1dd'
 
   def install
     rm_f Dir["bin/*.cmd", "sbin/*.cmd", "libexec/*.cmd", "etc/hadoop/*.cmd"]

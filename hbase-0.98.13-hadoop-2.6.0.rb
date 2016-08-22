@@ -3,7 +3,7 @@ require 'formula'
 class Hbase09813Hadoop260 < Formula
   homepage 'http://hbase.apache.org'
   url 'http://s3.amazonaws.com/korrelate-public-repo/hadoop/hbase/hbase-0.98.13-hadoop-2.6.0-SNAPSHOT-bin.tar.gz'
-  sha1 'a0139f9d4026fd20171d7baba5ab03d023eb8338'
+  sha256 '8907f2b0ef5153f9fb29ee257102dc3c91f1eafaefeeee0384b484516b7358b2'
 
   depends_on 'hadoop-2.5.2'
 

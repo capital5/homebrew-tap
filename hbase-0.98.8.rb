@@ -3,7 +3,7 @@ require 'formula'
 class Hbase0988 < Formula
   homepage 'http://hbase.apache.org'
   url 'http://archive.apache.org/dist/hbase/hbase-0.98.8/hbase-0.98.8-hadoop2-bin.tar.gz'
-  sha1 'a1b5d19a52976f2f42f21dd36bd040d081f3d491'
+  sha256 '665f55eca3ca54b3abcbe8d6fe3b918d64e387ec5f5c61ab79506cc42f567d5b'
 
   depends_on 'hadoop-2.5.2'
 

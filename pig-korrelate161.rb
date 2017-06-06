@@ -2,7 +2,7 @@ require 'formula'
 
 class PigKorrelate161 < Formula
   homepage 'https://github.com/korrelate/pig'
-  head 'https://github.com/korrelate/pig.git', :using => :git, :branch => 'branch-0.16.1-korrelate'
+  head 'https://github.com/korrelate/pig.git', :using => :git, :branch => 'branch-0.16.1-hadoop-2.7-korrelate'
 
   patch :DATA
 
@@ -15,7 +15,7 @@ class PigKorrelate161 < Formula
     # go to /Library/Caches/Homebrew/pig-korrelate161--git and run the system command
     # (ant clean...) listed above in that directory. Once complete, you can see
     # the name of the JAR and you will put the name of that JAR here:
-    prefix.install ['pig-0.16.1-KORRELATE-core-h2.jar']
+    prefix.install ['pig-0.16.1-hadoop-2.7-KORRELATE-core-h2.jar']
   end
 
   def caveats; <<-EOS.undent

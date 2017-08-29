@@ -11,7 +11,7 @@ class PigKorrelate152 < Formula
     system "ant clean jar -Dhadoopversion=23 -Dhbaseversion=95"
     bin.install 'bin/pig'
     lib.install Dir["lib/*"]
-    resource("zebra").stage { lib.install "zebra-0.8.0.jar" }
+
     # if updating this and in doubt of where to look for this thing,
     # go to /Library/Caches/Homebrew/pig-korrelate15--git and run the system command
     # (ant clean...) listed above in that directory. Once complete, you can see
@@ -23,10 +23,6 @@ class PigKorrelate152 < Formula
     You may need to set JAVA_HOME:
       export JAVA_HOME="$(/usr/libexec/java_home)"
     EOS
-  end
-
-  resource "zebra" do
-    url "http://korrelate.s3.amazonaws.com/hadoop/lib/zebra-0.8.0.jar"
   end
 
 end
